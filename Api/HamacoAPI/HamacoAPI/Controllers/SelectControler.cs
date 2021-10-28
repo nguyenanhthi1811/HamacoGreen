@@ -6,18 +6,22 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using HamacoAPI.Filters;
 using Newtonsoft.Json;
 
 namespace HamacoAPI.Controllers
 {
+    [BasicAuthentication]
     public class SelectController : ApiController
     {
+
         // GET api/values
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
+      
         public string Get(string id)
         {
 

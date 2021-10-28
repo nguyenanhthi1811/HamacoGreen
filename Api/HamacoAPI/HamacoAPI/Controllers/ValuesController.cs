@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HamacoAPI.Filters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -7,6 +8,9 @@ using System.Web.Http;
 
 namespace HamacoAPI.Controllers
 {
+    [BasicAuthentication]
+    //dGhpOjEyM2FiYzQ1Ng==    thi:123abc456
+
     public class ValuesController : ApiController
     {
         // GET api/values
